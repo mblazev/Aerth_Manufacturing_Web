@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy notice — Mario Blazevski</title>
+<meta name="description" content="What this site collects when you request a quote, why, how long it is kept, and your rights over it.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="doc.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="index.html"><b>Mario Blazevski</b><span class="mono">Engineering &amp; manufacturing</span></a>
+    <a class="back" href="index.html">Back to the site</a>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+  <h1>Privacy notice</h1>
+  <p class="meta mono">Version 1.0 · <span id="d">2026</span></p>
+  <p class="lede">Short version: this site has no cookies, no analytics and no advertising trackers. The only personal data collected is what you type into the quote form, and it is used to answer you.</p>
+
+  <h2><span class="num">01</span>Who is responsible</h2>
+  <p><strong id="co">Vitanova Consulting doo</strong><span id="coid"></span>, registered in North Macedonia, acting through Mario Blazevski, decides how the data described here is used. For anything in this notice, write to <a id="mail" href="#">email</a>.</p>
+
+  <h2><span class="num">02</span>What is collected</h2>
+  <ul>
+    <li><strong>Quote requests:</strong> your name, email address, the country you selected, the type of part, your description, and any file or photograph you attach.</li>
+    <li><strong>Messages you send directly</strong> by email, WhatsApp or Viber: whatever you choose to include, plus the phone number or address you send from.</li>
+    <li><strong>Server logs</strong> kept automatically by the hosting provider, which normally include IP address, browser type and the time of the request. These are used only to keep the site running and secure.</li>
+  </ul>
+  <p>Nothing else is collected. There is no account to create, no newsletter, and no tracking of how you move around the page.</p>
+
+  <h2><span class="num">03</span>Why, and on what basis</h2>
+  <ul>
+    <li>To answer your request, prepare a quote and, if you order, carry out the work — that is, to take steps at your request before entering a contract, and then to perform it.</li>
+    <li>To keep records of orders and invoices, because accounting and tax law requires it.</li>
+    <li>To keep the site available and protected from abuse, which is a legitimate interest in running the business.</li>
+  </ul>
+  <p>Your data is never sold, rented, or used for advertising, and you are never added to a mailing list from a quote request.</p>
+
+  <h2><span class="num">04</span>Who else can see it</h2>
+  <ul>
+    <li><strong>The hosting provider</strong> that serves this site.</li>
+    <li><strong>The form provider</strong>, if the quote form is used, which passes your message to my inbox.</li>
+    <li><strong>The email provider</strong> that carries our correspondence.</li>
+    <li><strong>The courier</strong>, for delivery address details, if you place an order.</li>
+    <li><strong>An accountant and the tax authority</strong>, for invoices, where the law requires it.</li>
+  </ul>
+  <p>This site loads its typefaces from Google Fonts, which means your browser contacts a Google server and that server sees your IP address. Nothing else is shared with Google, and no font-related cookie is set.</p>
+
+  <h2><span class="num">05</span>How long it is kept</h2>
+  <ul>
+    <li>Quote requests that do not become orders: up to 12 months, then deleted.</li>
+    <li>Order records and invoices: for the period required by accounting and tax law.</li>
+    <li>Design files you supplied: kept while the job is live and for a reasonable support period afterwards, then deleted on request at any time.</li>
+  </ul>
+
+  <h2><span class="num">06</span>Your rights</h2>
+  <p>You can ask for a copy of what is held about you, ask for it to be corrected, ask for it to be deleted, ask that it be restricted or object to its use, and ask for it in a portable format. Write to the address in section 01 and you will get an answer within 30 days. There is no charge.</p>
+  <p>If you are not satisfied, you can complain to the data protection authority in North Macedonia, or, if you are in the EU, to the supervisory authority where you live.</p>
+
+  <h2><span class="num">07</span>Security</h2>
+  <p>The site is served over HTTPS. Your files and correspondence are kept in accounts protected by strong, unique passwords and two-factor authentication. No system is perfect, so if something you send is genuinely sensitive, say so and we will agree how to transfer it.</p>
+
+  <h2><span class="num">08</span>Changes</h2>
+  <p>If this notice changes, the version number and date at the top change with it.</p>
+
+  <div class="note">
+    <strong>Before you publish:</strong> confirm the four items in section 04 by naming your actual providers once you have chosen them (for example Cloudflare for hosting, Formspree for the form). If you would rather not send visitors' IP addresses to Google at all, self-host the two typefaces and delete the Google Fonts lines from every page — the README explains how, and it takes about ten minutes. Then delete this box.
+  </div>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© <span id="yr">2026</span> Mario Blazevski · <a href="index.html">Home</a> · <a href="terms.html">Terms of supply</a></p>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script>
+(function(){
+  var C = window.SITE || {};
+  var y = new Date().getFullYear();
+  document.getElementById('yr').textContent = y;
+  document.getElementById('d').textContent = y;
+  if (C.company) document.getElementById('co').textContent = C.company;
+  if (C.companyId) document.getElementById('coid').textContent = ' (' + C.companyId + ')';
+  var m = document.getElementById('mail');
+  if (C.email){ m.href = 'mailto:' + C.email; m.textContent = C.email; }
+})();
+</script>
+</body>
+</html>

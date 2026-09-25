@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mario Blazevski — engineered parts, made in North Macedonia</title>
+<meta name="description" content="Engineering-led design and FDM manufacturing in North Macedonia: drone and UAV components, classic car restoration parts, jigs, fixtures and functional prototypes. Estimate the price in seconds. Fixed quotes in 2 business days.">
+<meta name="author" content="Mario Blazevski">
+<meta name="theme-color" content="#e9e7e1">
+<link rel="canonical" href="https://REPLACE-WITH-YOUR-DOMAIN.com/">
+<link rel="alternate" hreflang="en" href="https://REPLACE-WITH-YOUR-DOMAIN.com/">
+<link rel="alternate" hreflang="mk" href="https://REPLACE-WITH-YOUR-DOMAIN.com/mk/">
+<link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-YOUR-DOMAIN.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mario Blazevski — Engineering &amp; Manufacturing">
+<meta property="og:title" content="Engineered parts, made in North Macedonia">
+<meta property="og:description" content="Design review, manufacture and dimensional check of functional plastic parts. Drones, restoration, prototyping. Estimate the price in seconds.">
+<meta property="og:url" content="https://REPLACE-WITH-YOUR-DOMAIN.com/">
+<meta property="og:image" content="https://REPLACE-WITH-YOUR-DOMAIN.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://REPLACE-WITH-YOUR-DOMAIN.com/og.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<script src="config.js"></script>
+<script>
+/* English interface strings used by the shared script */
+window.I18N = {
+  menu:"Menu", close:"Close",
+  mailSubject:"Quote request",
+  perPart:"for one part", forQty:"for", qtyWord:"quantity",
+  estLine:"From the estimator", estimated:"Estimated",
+  warnSize:"Larger than the 256 mm build volume. The part would need splitting and bonding, or a different process.",
+  warnBig:"At this size, send the part over directly — a real quote will beat this estimate.",
+  materialHint:{ PLA:"cheapest, indoor only", PETG:"tough all-rounder", ABS:"heat resistant",
+                 ASA:"outdoor and UV", PC:"high load and heat", TPU:"flexible",
+                 "PA-CF":"stiffest, structural" }
+};
+/* Drafting placeholder if a work photo is missing — defined before any <img> can error */
+function makePlate(label){
+  var d=document.createElement('div');
+  d.className='plate plate--empty';
+  d.setAttribute('role','img');
+  d.setAttribute('aria-label',label+' photograph to follow');
+  d.textContent=label; return d;
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="statusbar">
+  <div class="wrap mono">
+    <span id="capacity"><span class="dot"></span><b>Accepting new work</b></span>
+    <span>Fixed quote in <b data-fill="quoteDays">2</b> business days</span>
+    <span>Production in North Macedonia · delivery across the Balkans and EU</span>
+  </div>
+</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top"><b>Mario Blazevski</b><span class="mono">Engineering &amp; manufacturing</span></a>
+    <nav class="topnav" aria-label="Sections">
+      <a href="#make">What I make</a>
+      <a href="#estimate">Estimate a price</a>
+      <a href="#materials">Materials</a>
+      <a href="#shop">Shop spec</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <span class="lang mono"><a href="./" aria-current="true">EN</a><span aria-hidden="true">/</span><a href="mk/" hreflang="mk">MK</a></span>
+    <a class="btn small" href="#quote">Get a quote</a>
+    <button class="navtoggle" id="navtoggle" aria-expanded="false" aria-controls="mobilenav">Menu</button>
+  </div>
+  <nav id="mobilenav" aria-label="Sections">
+    <a href="#make">What I make</a>
+    <a href="#estimate">Estimate a price</a>
+    <a href="#process">How a job runs</a>
+    <a href="#materials">Materials</a>
+    <a href="#shop">Shop specification</a>
+    <a href="#work">Work</a>
+    <a href="#faq">FAQ</a>
+    <a href="#quote"><b>Get a quote</b></a>
+  </nav>
+</header>
+
+<main id="main">
+<span id="top"></span>
+
+<!-- ================= HERO ================= -->
+<section class="wrap hero">
+  <div class="hero-grid">
+    <div>
+      <p class="origin mono"><b>Engineering-led manufacturing</b> <span>Skopje ↔ Warsaw</span></p>
+      <h1>Parts designed, made and checked before they ship.</h1>
+      <p class="lede">Drone hardware, classic car parts, jigs and functional prototypes. Every job starts as an engineering review — loads, fits, material, failure mode — and ends with a dimensional check. One part or a low-volume run.</p>
+      <div class="actions">
+        <a class="btn" href="#quote">Get a quote</a>
+        <a class="btn ghost" href="#estimate">Estimate a price now</a>
+      </div>
+      <dl class="specstrip mono">
+        <div><dt>Quote returned in</dt><dd><span data-fill="quoteDays">2</span> business days</dd></div>
+        <div><dt>Minimum order</dt><dd>One part</dd></div>
+        <div><dt>Price</dt><dd>Fixed before production</dd></div>
+        <div><dt>Files</dt><dd>Or just a photo</dd></div>
+      </dl>
+    </div>
+
+    <figure class="sheet">
+      <div class="field">
+        <svg viewBox="0 0 420 300" role="img" aria-label="Technical drawing of a mounting bracket with dimension lines and a hole tolerance callout">
+          <g stroke="#22447c" stroke-width="1" opacity=".2" fill="none"><path d="M24 276 H396 M24 24 V276"/></g>
+          <path d="M92 84 H300 V144 H162 V244 H92 Z" fill="#e0dcd3" stroke="#16171a" stroke-width="2" stroke-linejoin="round"/>
+          <circle cx="126" cy="114" r="13" fill="#f3f1ec" stroke="#16171a" stroke-width="2"/>
+          <circle cx="266" cy="114" r="13" fill="#f3f1ec" stroke="#16171a" stroke-width="2"/>
+          <circle cx="126" cy="209" r="13" fill="#f3f1ec" stroke="#16171a" stroke-width="2"/>
+          <g stroke="#22447c" stroke-width=".8">
+            <path d="M113 114 H139 M126 101 V127"/>
+            <path d="M253 114 H279 M266 101 V127"/>
+            <path d="M113 209 H139 M126 196 V222"/>
+          </g>
+          <g stroke="#22447c" stroke-width="1" fill="none" class="dimline" style="--len:920">
+            <path d="M92 58 H300"/><path d="M92 52 V64 M300 52 V64"/>
+            <path d="M60 84 V244"/><path d="M54 84 H66 M54 244 H66"/>
+            <path d="M281 114 L348 92"/>
+          </g>
+          <g fill="#22447c" font-family="Spline Sans Mono, monospace" font-size="12">
+            <text x="178" y="48">210</text><text x="18" y="168">160</text>
+          </g>
+          <text x="350" y="90" fill="#b8362a" font-family="Spline Sans Mono, monospace" font-size="12">⌀5 ±0.1</text>
+          <text x="92" y="272" fill="#54565a" font-family="Spline Sans Mono, monospace" font-size="11">PA-CF · 4 walls · 60% gyroid · Z-axis loaded in shear</text>
+        </svg>
+      </div>
+      <dl class="titleblock mono">
+        <div><dt>Part</dt><dd>Sensor mount bracket</dd></div>
+        <div><dt>Material</dt><dd>PA-CF</dd></div>
+        <div><dt>Units</dt><dd>mm unless noted</dd></div>
+      </dl>
+    </figure>
+  </div>
+</section>
+
+<!-- ================= WHAT I MAKE ================= -->
+<section class="wrap band" id="make">
+  <h2>What I make</h2>
+  <p class="lede">Four kinds of work. If your job doesn't fit any of them, describe it anyway — I'll tell you honestly whether this is the right process for it.</p>
+
+  <div class="rows">
+    <article class="row">
+      <div><h3>Drone and UAV components</h3><p class="who">For drone teams, robotics and agri-tech startups, university teams.</p></div>
+      <ul>
+        <li>Structural brackets, arm clamps and mounting hardware</li>
+        <li>Camera, sensor and gimbal interfaces</li>
+        <li>Battery trays and electronics enclosures</li>
+        <li>Material and wall structure chosen against your load case, not defaults</li>
+      </ul>
+      <p class="price mono"><b data-price="uav">€40–150</b><span>typical bracket</span></p>
+    </article>
+
+    <article class="row">
+      <div><h3>Classic car and restoration parts</h3><p class="who">For restoration shops, collectors and car clubs across the Balkans.</p></div>
+      <ul>
+        <li>Trim, knobs, clips, bezels and badges</li>
+        <li>Functional brackets and mounts</li>
+        <li>Reverse-engineered from the original part, a photo or rough measurements</li>
+        <li>Zastava 750 (Fićo), Fiat 600, Fiat 850 and 126, Yugo — familiar ground</li>
+        <li>Technical standards are daily work: president of the technical commission at the national FIA-member federation</li>
+      </ul>
+      <p class="price mono"><b data-price="resto">€10–60</b><span>typical trim part</span></p>
+    </article>
+
+    <article class="row">
+      <div><h3>Jigs, fixtures and prototypes</h3><p class="who">For small manufacturers, workshops and startups.</p></div>
+      <ul>
+        <li>CAD from a sketch, a requirement or a problem description</li>
+        <li>Manufacturability notes before anything is made</li>
+        <li>Assembly fixtures, drill jigs and alignment tools</li>
+        <li>Low-volume runs once a part is proven</li>
+      </ul>
+      <p class="price mono"><b data-price="proto">Quoted per job</b><span>design + parts</span></p>
+    </article>
+
+    <article class="row">
+      <div><h3>One-off custom parts</h3><p class="who">For anyone with a part that broke, was discontinued, or never existed.</p></div>
+      <ul>
+        <li>Send a file, a photo, or the broken original</li>
+        <li>Everyday and high-temperature engineering plastics</li>
+        <li>Cosmetic finish or structural intent, agreed before production</li>
+      </ul>
+      <p class="price mono"><b data-price="oneoff">from €10</b><span>plus shipping</span></p>
+    </article>
+  </div>
+</section>
+
+<!-- ================= ESTIMATOR ================= -->
+<section class="wrap band" id="estimate">
+  <h2>What will it cost? Work it out now.</h2>
+  <p class="lede">Rough dimensions are enough. This runs the same arithmetic I do when quoting — filament volume, machine time, setup — so you know the order of magnitude before you write to me.</p>
+
+  <div class="est" id="estimator">
+    <div class="est-form">
+      <div class="est-row">
+        <label id="preset-label">Start from a typical part</label>
+        <div class="presets" role="group" aria-labelledby="preset-label">
+          <button type="button" class="chip" aria-pressed="false" data-x="30" data-y="20" data-z="10" data-s="0.25" data-m="PETG">Clip or small trim</button>
+          <button type="button" class="chip" aria-pressed="false" data-x="45" data-y="45" data-z="25" data-s="0.25" data-m="ABS">Knob or bezel</button>
+          <button type="button" class="chip" aria-pressed="false" data-x="120" data-y="80" data-z="40" data-s="0.50" data-m="PETG">Bracket</button>
+          <button type="button" class="chip" aria-pressed="false" data-x="160" data-y="110" data-z="60" data-s="0.10" data-m="PETG">Electronics enclosure</button>
+          <button type="button" class="chip" aria-pressed="false" data-x="90" data-y="60" data-z="35" data-s="0.50" data-m="PA-CF">Drone arm mount</button>
+        </div>
+        <p class="hint">Or measure your own below — rough numbers are fine.</p>
+      </div>
+
+      <div class="est-row">
+        <label for="e-x">Rough size of the part, in millimetres</label>
+        <div class="dims">
+          <input id="e-x" type="number" min="1" max="1000" step="1" value="120" inputmode="numeric" aria-label="Length in millimetres">
+          <input id="e-y" type="number" min="1" max="1000" step="1" value="80" inputmode="numeric" aria-label="Width in millimetres">
+          <input id="e-z" type="number" min="1" max="1000" step="1" value="40" inputmode="numeric" aria-label="Height in millimetres">
+        </div>
+        <p class="hint">Length × width × height of the box the part would fit inside.</p>
+      </div>
+
+      <div class="est-row est-two">
+        <div>
+          <label for="e-strength">How strong does it need to be</label>
+          <select id="e-strength">
+            <option value="0.10">Cosmetic or light duty</option>
+            <option value="0.25" selected>Standard functional part</option>
+            <option value="0.50">Structural, carries load</option>
+          </select>
+        </div>
+        <div>
+          <label for="e-material">Material</label>
+          <select id="e-material"></select>
+        </div>
+      </div>
+
+      <div class="est-row est-two">
+        <div>
+          <label for="e-qty">How many</label>
+          <input id="e-qty" type="number" min="1" max="500" step="1" value="1" inputmode="numeric">
+        </div>
+      </div>
+    </div>
+
+    <div class="readout">
+      <div class="head mono"><span>Estimated price</span><span class="dim">indicative, not a quote</span></div>
+      <div class="figure">
+        <p class="bignum" id="e-out">—</p>
+        <dl class="breakdown mono">
+          <div><dt>Per part</dt><dd id="e-unit">—</dd></div>
+          <div><dt>Filament used</dt><dd id="e-mass">—</dd></div>
+          <div><dt>Machine time</dt><dd id="e-time">—</dd></div>
+        </dl>
+        <p class="warn hidden" id="e-warn"></p>
+        <div class="actions" style="margin-top:24px">
+          <a class="btn small" href="#quote" id="e-use">Send these numbers with my request</a>
+        </div>
+      </div>
+      <p class="est-note">The estimate assumes an average part shape and includes shipping within North Macedonia. Design work, threaded inserts, painting and unusual geometry are quoted separately. Your real price is fixed in writing before anything is made, and it is often lower than this.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section class="wrap band" id="process">
+  <h2>How a job runs</h2>
+  <p class="lede">Four steps. You approve a fixed price before anything is manufactured, and nothing is added to it afterwards.</p>
+  <div class="steps">
+    <div class="step"><span class="n mono">Step 1</span><h3>You send the part</h3>
+      <p>A CAD file, a drawing, a photo of the broken original, or a description of what it has to do. No file is fine.</p></div>
+    <div class="step"><span class="n mono">Step 2</span><h3>Quote and design notes</h3>
+      <p>Within <span data-fill="quoteDays">2</span> business days: fixed price, material and tolerance recommendation, and anything in the design likely to fail in service.</p></div>
+    <div class="step"><span class="n mono">Step 3</span><h3>Manufacture and check</h3>
+      <p>Made, then measured against the dimensions and fits we agreed. Critical holes are test-fitted, not assumed.</p></div>
+    <div class="step"><span class="n mono">Step 4</span><h3>Packed and shipped</h3>
+      <p>Packed for the part and sent by courier, with tracking. Shipping cost is in the quote, never added at the end.</p></div>
+  </div>
+
+  <div class="included">
+    <div class="inc"><h3>A dimensional check with every order</h3>
+      <p>Key dimensions measured against what we agreed, and the result written down. If something is out, you hear it from me before it ships.</p></div>
+    <div class="inc"><h3>The CAD file, if you want it</h3>
+      <p>For reverse-engineered and designed parts you can take the STEP file with you. No lock-in to keep you coming back.</p></div>
+    <div class="inc"><h3>A proper invoice</h3>
+      <p>Issued by <span data-fill="company">Vitanova Consulting doo</span>, a registered company in North Macedonia. Straightforward for business accounting on either side.</p></div>
+  </div>
+</section>
+
+<!-- ================= APPROACH ================= -->
+<section class="wrap band" id="approach">
+  <h2>Engineering decisions come before manufacturing decisions</h2>
+  <p class="lede">A print service takes your file and runs it. This works the way a part is released in aviation or motorsport: decide what it has to survive, then decide how to make it.</p>
+  <div class="notes">
+    <div class="note"><h3>Requirements first</h3>
+      <p>Where it mounts, what it carries, how hot it gets, whether anyone has to service it, and what happens if it fails. That conversation comes before any print file.</p></div>
+    <div class="note"><h3>Fits and interfaces</h3>
+      <p>Critical clearances, fasteners, assembly order and inspection points are agreed up front, so the part works in your assembly and not only on the bench.</p></div>
+    <div class="note"><h3>Material and process</h3>
+      <p>Filament, print orientation, wall count and reinforcement are chosen against the operating case, balancing mass, stiffness, heat resistance, finish and cost.</p></div>
+    <div class="note"><h3>A real acceptance check</h3>
+      <p>Aviation airworthiness work and Formula Student scrutineering both run on defined acceptance criteria. Parts leave here on the same habit: measured, recorded, then shipped.</p></div>
+  </div>
+  <p class="pull">Teams in the Western Balkans should not need a three-week import to replace one part, validate one component, or build the first ten units.</p>
+</section>
+
+<!-- ================= MATERIALS ================= -->
+<section class="wrap band" id="materials">
+  <h2>Choosing the material</h2>
+  <p class="lede">Most parts that fail were printed in the wrong plastic, not printed badly. If you tell me where the part lives and what it carries, this choice is mine to get right — but here is the reasoning, so you can check it.</p>
+
+  <div class="mat-wrap">
+    <table class="mat">
+      <thead>
+        <tr>
+          <th scope="col">Material</th>
+          <th scope="col">Useful up to</th>
+          <th scope="col">Character</th>
+          <th scope="col">Outdoors &amp; UV</th>
+          <th scope="col">Where it belongs</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">PLA</th>
+          <td class="num">~50 °C</td>
+          <td>Stiff but brittle. Snaps rather than bends.</td>
+          <td>Poor</td>
+          <td>Indoor jigs, mock-ups, fit checks, display parts. Never in a car in summer.</td>
+        </tr>
+        <tr>
+          <th scope="row">PETG</th>
+          <td class="num">~70 °C</td>
+          <td>Tough, forgiving, slight flex before it breaks.</td>
+          <td>Moderate</td>
+          <td>The default for general functional parts, enclosures and brackets that live indoors.</td>
+        </tr>
+        <tr>
+          <th scope="row">ABS</th>
+          <td class="num">~90 °C</td>
+          <td>Tough and machinable. Can be vapour smoothed and glued solvent-tight.</td>
+          <td>Poor unless painted</td>
+          <td>Car interior trim, engine-bay-adjacent parts kept out of sunlight.</td>
+        </tr>
+        <tr>
+          <th scope="row">ASA</th>
+          <td class="num">~95 °C</td>
+          <td>Like ABS, but it survives sunlight.</td>
+          <td>Good</td>
+          <td>Anything permanently outdoors: drone shells, exterior trim, sensor housings.</td>
+        </tr>
+        <tr>
+          <th scope="row">PC</th>
+          <td class="num">~110 °C</td>
+          <td>Very strong and stiff, high impact resistance.</td>
+          <td>Moderate</td>
+          <td>High-load, high-temperature brackets where a metal part would be overkill.</td>
+        </tr>
+        <tr>
+          <th scope="row">TPU</th>
+          <td class="num">~70 °C</td>
+          <td>Flexible, rubbery, absorbs vibration.</td>
+          <td>Moderate</td>
+          <td>Bushings, seals, grommets, drone landing feet, anti-vibration mounts.</td>
+        </tr>
+        <tr>
+          <th scope="row">PA-CF</th>
+          <td class="num">~110 °C</td>
+          <td>Stiffest option here. Low creep under sustained load, dimensionally stable.</td>
+          <td>Moderate</td>
+          <td>Structural drone brackets, arm clamps, fixtures that must hold shape under load.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="mat-note">Temperatures are practical service limits under light load, not datasheet peaks. Every printed part is weaker across the layers than along them, so orientation is chosen against the load direction, not for the fastest print. Where sunlight, fuel, solvents or sustained load are involved, say so in your enquiry — it changes the answer more than anything else.</p>
+</section>
+
+<!-- ================= SHOP SPEC ================= -->
+<section class="wrap band" id="shop">
+  <h2>Shop specification</h2>
+  <p class="lede">Engineering-grade FDM, honestly scoped. This is a small shop, not a factory — that is the point of it, and also its limit.</p>
+  <dl class="spec">
+    <div><dt class="mono">Machine</dt><dd>Bambu Lab P2S, fully enclosed and filtered chamber</dd></div>
+    <div><dt class="mono">Build volume</dt><dd>256 × 256 × 256 mm</dd></div>
+    <div><dt class="mono">Materials</dt><dd>PLA, PETG, ABS, ASA, PC, TPU, and reinforced composites such as PA-CF</dd></div>
+    <div><dt class="mono">Typical tolerance</dt><dd data-fill="tolerance">±0.2 mm on general dimensions; ±0.1 mm achievable on critical features with a test fit first</dd></div>
+    <div><dt class="mono">Files accepted</dt><dd>STEP, STL, 3MF, DXF — or a photo, a sketch, or the original part</dd></div>
+    <div><dt class="mono">Batch size</dt><dd>One-off through low-volume production runs</dd></div>
+    <div><dt class="mono">Delivery</dt><dd>North Macedonia, the Western Balkans, and tracked delivery to the EU</dd></div>
+    <div class="no"><dt class="mono">Not done here</dt><dd>Metal machining, injection moulding, and any part for a certified aircraft or a flight-critical application. If FDM is the wrong process for your part, I will say so and point you somewhere better.</dd></div>
+  </dl>
+</section>
+
+<!-- ================= BACKGROUND ================= -->
+<section class="wrap band" id="background">
+  <h2>Background</h2>
+  <p class="lede">Aviation, compliance and hands-on technical work — the reason the engineering review is worth more than the printer.</p>
+  <div class="creds">
+    <div class="cred"><p class="when mono">Now</p><h3>Aeronautical engineer, Evionica (Warsaw)</h3>
+      <p>Aviation training content and technical documentation covering aircraft systems, flight operations and regulations.</p></div>
+    <div class="cred"><p class="when mono">Aviation safety</p><h3>Aviation accident investigator</h3>
+      <p>Aviation Accident and Incident Investigation Committee: ICAO Annex 13 root-cause analysis, co-authored safety recommendations, and reporting that had to survive external scrutiny.</p></div>
+    <div class="cred"><p class="when mono">Airworthiness</p><h3>Helicopter safety operations engineer</h3>
+      <p>Helicopter Unit, Ministry of Interior of North Macedonia: ICAO and EASA compliance, safety management system implementation, inspections, and liaison with crews, maintenance organisations and the authority.</p></div>
+    <div class="cred"><p class="when mono">Motorsport</p><h3>President of the Technical Commission, Automobile Federation of North Macedonia</h3>
+      <p>The national FIA member federation, since 2023. Also head of scrutineering at FS Alpe Adria, and an FIA-licensed scrutineer and steward.</p></div>
+    <div class="cred"><p class="when mono">Studying</p><h3>Warsaw University of Technology</h3>
+      <p>Faculty of Power and Aeronautical Engineering, aerospace engineering with a propulsion systems specialisation.</p></div>
+    <div class="cred"><p class="when mono">Founder</p><h3>Aerth and the Macedonian Student Rocketry Team</h3>
+      <p>North Macedonia's first competitive aerospace team, an F1 in Schools World Finals entry, the country's first Formula Student programme at Ss. Cyril and Methodius University, and its first student rocketry team.</p></div>
+    <div class="cred"><p class="when mono">Company</p><h3><span data-fill="company">Vitanova Consulting doo</span></h3>
+      <p>Registered in North Macedonia, with an engineering and technology division. All orders are invoiced through the company.</p></div>
+  </div>
+</section>
+
+<!-- ================= WORK ================= -->
+<section class="wrap band" id="work">
+  <h2>Work</h2>
+  <p class="lede">Design, manufacturing and technical-compliance work across aviation, UAV, restoration and motorsport.</p>
+  <div class="jobs">
+    <article class="job">
+      <img class="plate" src="images/work-drone.jpg" alt="Agricultural spray drone prototype" width="1200" height="900" loading="lazy" onerror="this.replaceWith(makePlate('UAV'))">
+      <div class="body">
+        <span class="tag mono">In development</span>
+        <h3>Agricultural spray drone</h3>
+        <p>In-house airframe design for a 5-litre electric multirotor sprayer, 10–15 kg MTOW, on the PX4 flight stack. Built as proof of capability for the engineering division of <span data-fill="company">Vitanova Consulting doo</span>.</p>
+        <p><a class="mono" href="https://vitanovaconsulting.mk" target="_blank" rel="noopener">vitanovaconsulting.mk</a></p>
+      </div>
+    </article>
+    <article class="job">
+      <img class="plate" src="images/work-fiat.jpg" alt="Zastava 750 Fico restoration parts" width="1200" height="900" loading="lazy" onerror="this.replaceWith(makePlate('RESTO'))">
+      <div class="body">
+        <span class="tag done mono">Ongoing</span>
+        <h3>Zastava 750 “Fićo” restoration</h3>
+        <p>Mechanical restoration of the Yugoslav-built Fiat 600, combined with interior trim and functional replacement parts reverse-engineered from the originals — including pieces no supplier has stocked for decades.</p>
+      </div>
+    </article>
+    <article class="job">
+      <img class="plate" src="images/work-fsae.jpg" alt="Formula Student technical inspection" width="1200" height="900" loading="lazy" onerror="this.replaceWith(makePlate('FSAA'))">
+      <div class="body">
+        <span class="tag done mono">Delivered</span>
+        <h3>FS Alpe Adria scrutineering</h3>
+        <p>Standardisation and process documentation for technical inspection at one of Europe's larger Formula Student competitions, so every team is judged against the same written criteria.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="wrap band" id="faq">
+  <h2>Questions people ask before ordering</h2>
+  <div class="faq">
+    <details open><summary>What will my part cost?</summary>
+      <div class="a">Use the estimator above for the order of magnitude. Small trim pieces, clips and knobs are usually €10–60; brackets, mounts and enclosures usually €40–150. Design work from a sketch or a broken original is quoted separately. You get one fixed price before anything is made, shipping included.</div></details>
+    <details><summary>How long does it take?</summary>
+      <div class="a">Quote and design notes within <span data-fill="quoteDays">2</span> business days. Once you approve, most single parts are made within a few days. Larger runs and jobs needing CAD from scratch get a firm date in the quote.</div></details>
+    <details><summary>Do you ship outside North Macedonia?</summary>
+      <div class="a">Yes. Domestic courier inside North Macedonia, regional courier to Serbia, Kosovo, Albania, Montenegro and Bosnia, and tracked delivery to EU countries. Shipping is quoted per order so you see the full cost before you commit.</div></details>
+    <details><summary>What tolerances can you hold?</summary>
+      <div class="a">Around ±0.2 mm on general dimensions, and ±0.1 mm on critical features when we agree a test fit first. Bores, slots and press fits are checked against the mating part rather than trusted straight off the machine. If your part needs tighter than that, it needs machining, not printing, and I will tell you so.</div></details>
+    <details><summary>Will a printed part really hold up?</summary>
+      <div class="a">In the right plastic, in the right orientation, for the right job — yes, and it has been doing so in cars, drones and machinery for years. In the wrong plastic it fails quickly and predictably: PLA in a hot car, any plastic loaded across its layers, an unfilleted inside corner. That judgement is the part of this you are actually paying for.</div></details>
+    <details><summary>Is there a minimum order?</summary>
+      <div class="a">No. One part is a normal order. Small runs are welcome, and the per-part price drops with quantity.</div></details>
+    <details><summary>Do I need a finished CAD file?</summary>
+      <div class="a">No. A photo with a ruler next to the part, a sketch with a few measurements, or the original part in your hand is enough to start. If you do have STEP, STL or DXF, send it and the quote comes back faster.</div></details>
+    <details><summary>I only have the broken original. Now what?</summary>
+      <div class="a">Send photos first so I can check it is worth doing. If it is, the part is measured, redrawn in CAD, and improved where the original failed — thicker where it cracked, better fastener support where it pulled through. You get the part, and the CAD file if you want it.</div></details>
+    <details><summary>Who owns the design?</summary>
+      <div class="a">You do. Drawings and CAD produced for your job are yours to use, and your files and photographs are not shown to anyone else or used as examples without your written permission.</div></details>
+    <details><summary>Why source here instead of Western Europe or China?</summary>
+      <div class="a">For a hundred identical parts, you should not. For one part, a first prototype, or three revisions in a month, an overseas order means freight, customs and a week of waiting per revision. Here you get an engineer who reads the design, one courier hop, and a revision turned around in days.</div></details>
+  </div>
+</section>
+
+<!-- ================= QUOTE ================= -->
+<section class="wrap band" id="quote">
+  <h2>Get a quote</h2>
+  <p class="lede">Describe the part or the problem. A file helps but is not needed — a photo, a sketch or a few measurements are enough to start.</p>
+
+  <div class="contact-grid">
+    <div>
+      <form id="quoteform" novalidate>
+        <div class="f2">
+          <div class="fld" id="f-name">
+            <label for="name">Name</label>
+            <input id="name" name="name" required autocomplete="name">
+            <p class="err-msg">Please add your name.</p>
+          </div>
+          <div class="fld" id="f-email">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required autocomplete="email" inputmode="email">
+            <p class="err-msg">Please add an email address I can reply to.</p>
+          </div>
+        </div>
+        <div class="f2" style="margin-top:16px">
+          <div class="fld">
+            <label for="type">What kind of part</label>
+            <select id="type" name="type">
+              <option>Drone / UAV component</option>
+              <option>Classic car or restoration part</option>
+              <option>Jig, fixture or prototype</option>
+              <option>One-off custom part</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="fld">
+            <label for="country">Where you are</label>
+            <select id="country" name="country">
+              <option>North Macedonia</option><option>Serbia</option><option>Kosovo</option>
+              <option>Albania</option><option>Montenegro</option><option>Bosnia and Herzegovina</option>
+              <option>Croatia or Slovenia</option><option>Bulgaria or Greece</option><option>Poland</option>
+              <option>Another EU country</option><option>Elsewhere</option>
+            </select>
+          </div>
+        </div>
+        <div class="fld" id="f-message" style="margin-top:16px">
+          <label for="message">The part or the problem</label>
+          <textarea id="message" name="message" required placeholder="What it does, where it mounts, what loads or temperatures it sees, how many you need, and when you need them."></textarea>
+          <p class="err-msg">Tell me what the part has to do, even in one line.</p>
+        </div>
+        <div class="fld" id="filefield">
+          <label for="file">Attach a file or photo (optional)</label>
+          <input id="file" name="file" type="file" accept=".stl,.step,.stp,.3mf,.dxf,.pdf,image/*">
+          <p class="hint">STL, STEP, 3MF, DXF, PDF or a photo, up to 10 MB.</p>
+        </div>
+        <p class="hp"><label for="company_hp">Leave this empty</label><input id="company_hp" name="company_hp" tabindex="-1" autocomplete="off"></p>
+        <button class="btn" type="submit" id="submitbtn">Send request</button>
+        <p class="status dim" id="status" role="status" aria-live="polite"></p>
+        <p class="hint" style="margin-top:14px">Your details are used only to answer this request. No mailing list, nothing shared with anyone else. <a href="privacy.html">Privacy notice</a>.</p>
+      </form>
+
+      <div class="sent hidden" id="sent" tabindex="-1">
+        <h3>Request received</h3>
+        <p class="dim">Here is what happens next:</p>
+        <ol>
+          <li>I read the request and come back within <span data-fill="quoteDays">2</span> business days, usually sooner.</li>
+          <li>You get a fixed price, a material and tolerance recommendation, and notes on anything in the design likely to fail.</li>
+          <li>Nothing is manufactured until you approve that price in writing.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="contact-side">
+      <p>Fastest route: send a photo of the part with something for scale, and one line about what it has to do.</p>
+      <a class="direct" id="c-whatsapp" href="#"><span>WhatsApp</span><small>Send a photo, get a price</small></a>
+      <a class="direct" id="c-viber" href="#"><span>Viber</span><small>Same, if you prefer it</small></a>
+      <a class="direct" id="c-email" href="#"><span>Email</span><small id="c-email-sub">Direct to my inbox</small></a>
+      <a class="direct" id="c-linkedin" href="#"><span>LinkedIn</span><small>Professional enquiries</small></a>
+      <div class="mk">Пишете ми на македонски — <a href="mk/">македонската верзија е тука</a>.</div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap fgrid">
+    <div>
+      <p><strong>Mario Blazevski</strong><br>Engineering and precision FDM manufacturing.</p>
+      <p style="margin-top:12px">Invoiced through <strong data-fill="company">Vitanova Consulting doo</strong><span id="companyid"></span>, registered in North Macedonia. Engineering from Warsaw, Poland.</p>
+      <p style="margin-top:12px">© <span id="yr">2026</span> Mario Blazevski</p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="#make">What I make</a>
+      <a href="#estimate">Estimate a price</a>
+      <a href="#materials">Choosing the material</a>
+      <a href="#shop">Shop specification</a>
+      <a href="terms.html">Terms of supply</a>
+      <a href="privacy.html">Privacy notice</a>
+      <a href="mk/" hreflang="mk">Македонски</a>
+    </nav>
+    <div class="legal">
+      <p>Parts supplied here are for prototyping, ground equipment and non-certified use. They are not certified aircraft parts and must not be used in flight-critical or life-safety applications.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org","@type":"ProfessionalService",
+  "@id":"https://REPLACE-WITH-YOUR-DOMAIN.com/#business",
+  "name":"Mario Blazevski — Engineering & Manufacturing",
+  "description":"Engineering-led design and FDM manufacturing of drone components, classic car restoration parts, jigs, fixtures and functional prototypes.",
+  "url":"https://REPLACE-WITH-YOUR-DOMAIN.com/",
+  "priceRange":"€€",
+  "areaServed":["MK","RS","XK","AL","ME","BA","HR","SI","BG","GR","PL"],
+  "address":{"@type":"PostalAddress","addressCountry":"MK"},
+  "founder":{"@type":"Person","name":"Mario Blazevski","jobTitle":"Aeronautical engineer","alumniOf":{"@type":"CollegeOrUniversity","name":"Warsaw University of Technology"}},
+  "knowsAbout":["3D printing","FDM manufacturing","UAV components","reverse engineering","rapid prototyping","classic car restoration parts","jigs and fixtures"],
+  "hasOfferCatalog":{"@type":"OfferCatalog","name":"Manufacturing services","itemListElement":[
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Drone and UAV components"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Classic car and restoration parts"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Jigs, fixtures and prototypes"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"One-off custom parts"}}]}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"What will my part cost?","acceptedAnswer":{"@type":"Answer","text":"Small trim pieces, clips and knobs are usually €10–60. Brackets, mounts and enclosures are usually €40–150. Design work is quoted separately. You get one fixed price before anything is made, shipping included."}},
+    {"@type":"Question","name":"How long does it take?","acceptedAnswer":{"@type":"Answer","text":"Quote and design notes within 2 business days. Once approved, most single parts are made within a few days."}},
+    {"@type":"Question","name":"Do you ship outside North Macedonia?","acceptedAnswer":{"@type":"Answer","text":"Yes. Domestic courier inside North Macedonia, regional courier to Serbia, Kosovo, Albania, Montenegro and Bosnia, and tracked delivery to EU countries."}},
+    {"@type":"Question","name":"What tolerances can you hold?","acceptedAnswer":{"@type":"Answer","text":"Around ±0.2 mm on general dimensions, and ±0.1 mm on critical features when a test fit is agreed first."}},
+    {"@type":"Question","name":"Will a printed part really hold up?","acceptedAnswer":{"@type":"Answer","text":"In the right plastic, in the right orientation, for the right job, yes. In the wrong plastic it fails quickly and predictably, which is why material and orientation are chosen against the operating case."}},
+    {"@type":"Question","name":"Is there a minimum order?","acceptedAnswer":{"@type":"Answer","text":"No. One part is a normal order, and the per-part price drops with quantity."}},
+    {"@type":"Question","name":"Do I need a finished CAD file?","acceptedAnswer":{"@type":"Answer","text":"No. A photo with something for scale, a sketch with measurements, or the original part is enough. STEP, STL and DXF files are welcome if you have them."}},
+    {"@type":"Question","name":"Who owns the design?","acceptedAnswer":{"@type":"Answer","text":"The customer. Drawings and CAD produced for a job belong to the customer, and customer files are not shown to anyone else without written permission."}}]
+}
+</script>
+</body>
+</html>
